@@ -1,0 +1,99 @@
+{
+    //Power Typing Settings
+    "terminal.integrated.allowChords": false,
+    "cSpell.words": ["nginxinc"],
+    "powermode.presets": "particles",
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.shake.enabled": false,
+    // Core Editor Settings
+    "editor.tabSize": 4, // 4 spaces per tab for better readability
+    "editor.insertSpaces": true, // Use spaces instead of tabs
+    "editor.trimAutoWhitespace": true, // Remove trailing whitespace automatically
+    "editor.wordWrap": "on", // Wrap long lines to enhance readability
+    "editor.renderWhitespace": "all", // Visualize spaces, tabs, and trailing spaces
+    "editor.formatOnSave": true, // Auto-format code on save
+    "editor.rulers": [80, 120], // Show rulers at 80 & 120 characters for max line length
+    "editor.autoClosingBrackets": "always", // Auto-close brackets
+    "editor.autoClosingQuotes": "always", // Auto-close quotes
+
+    // Ruler Colors
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#00FF00", // Default ruler color (green for 80)
+    "editorRuler.color": [
+      { "column": 80, "color": "Green" }, // Green ruler at 80 characters
+      { "column": 120, "color": "Red" } // Red ruler at 120 characters
+    ]
+  },
+
+    //Formatting
+    "prettier.printWidth": 80, // Enforce 80 characters per line (common industry standard)
+    "prettier.tabWidth": 4, // Match editor tab width
+    "prettier.useTabs": false, // Use spaces for indentation (industry best practice)
+    "prettier.singleQuote": true, // Use single quotes for strings (common convention)
+    "prettier.trailingComma": "es5", // Add trailing commas where valid in ES5 (objects, arrays, etc.)
+    "prettier.semi": true, // Use semicolons for line termination
+
+    // Linting & IntelliSense
+    "eslint.alwaysShowStatus": true, // Show ESLint status in the bottom bar
+    "eslint.format.enable": true, // Allow ESLint to auto-format code on save
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue"
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode", // Prettier for JSON formatting
+        "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[markdown]": {
+        "editor.wordWrap": "on", // Enable word wrap for Markdown files
+        "editor.quickSuggestions": {
+            "other": "on",
+            "comments": "off",
+            "strings": "off"
+        }
+        // Disable quick suggestions for better writing flow
+    },
+    // Git Settings
+    "git.autofetch": true, // Auto-fetch updates from remote repositories
+    "git.confirmSync": false, // Automatically sync changes without confirmation
+    "git.enableSmartCommit": true, // Automatically commit changes if no files are staged
+    "gitlens.codeLens.enabled": true, // Show GitLens annotations in the code
+
+    // Terminal Settings
+    "terminal.integrated.fontSize": 14, // Set terminal font size
+    "terminal.integrated.cursorBlinking": true, // Enable blinking cursor in terminal
+    "terminal.integrated.scrollback": 10000, // Large scrollback buffer in terminal
+
+    // Files & Search
+    "files.autoSave": "afterDelay", // Automatically save files after a delay
+    "files.autoSaveDelay": 1000, // Save files after 1 second of inactivity
+    "files.trimTrailingWhitespace": true, // Trim trailing whitespace on save
+    "files.insertFinalNewline": true, // Ensure files end with a newline
+    "search.exclude": {
+        "**/node_modules": true, // Exclude node_modules from search results
+        "**/dist": true, // Exclude build directories from search results
+        "**/out": true
+    },
+    "files.exclude": {
+        "**/node_modules": true, // Hide node_modules from the file explorer
+        "**/dist": true // Hide dist folder from the file explorer
+    },
+
+    // Extensions (Prettier, ESLint, GitLens)
+    "extensions.ignoreRecommendations": false, // Follow VS Code extension recommendations
+    "prettier.requireConfig": true, // Only run Prettier if a config file is found
+    "prettier.proseWrap": "always", // Always wrap markdown text
+    "prettier.arrowParens": "avoid" // Omit parentheses when possible in arrow functions
+}
